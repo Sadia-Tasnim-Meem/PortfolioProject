@@ -7,7 +7,13 @@ let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
+/*========== sticky navbar ==========*/
 window.onscroll = () => {
+    let header = document.querySelector('.header');
+
+    header.classList.toggle('sticky', window.scrollY > 100);
 };
+
+
 
 
